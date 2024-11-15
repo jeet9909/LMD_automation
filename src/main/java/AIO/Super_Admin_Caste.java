@@ -33,6 +33,8 @@ public class Super_Admin_Caste {
 	@FindBy(xpath = "//*[@id=\"kt_modal_add_caste_form\"]/div[2]/button[2]")
 	WebElement Submit_Button;
 	
+	@FindBy(xpath = "//*[@id=\"root\"]/div[6]")
+	WebElement Validation_Message;
 	
 	public void Add_Caste()
 	{
@@ -41,6 +43,7 @@ public class Super_Admin_Caste {
 		Caste_Name_Field.sendKeys("Demo Caste");
 		Add_Description.sendKeys("Test Demo Description");
 		Submit_Button.click();
+		System.out.println(Validation_Message.getText());
 	}
 	
 //	=============================== Edit Caste ===================
@@ -60,6 +63,7 @@ public class Super_Admin_Caste {
 		Edit_Option.click();
 		Caste_Name_Field.sendKeys("Test Caste Edit");
 		Submit_Button.click();
+		System.out.println(Validation_Message.getText());
 	}
 	
 	
@@ -76,13 +80,28 @@ public class Super_Admin_Caste {
 	WebElement Delete_OK_BTN;
 	
 	
-	public void Delete_Caste()
+	public void Delete_Caste() throws InterruptedException
 	{
 		Action_DropDown.click();
 		Delete_Option.click();
+		Thread.sleep(1000);
 		Delete_Confirm_Btn.click();
+		Thread.sleep(1000);
 		Delete_OK_BTN.click();
+		System.out.println(Validation_Message.getText());
 	}
 	
+//	================================== Super Admin Logout ====================================
 	
+	@FindBy(xpath = "//*[@id=\"kt_app_header_wrapper\"]/div[2]/div[2]/div[1]/img")
+	WebElement Logout_Icon;
+	
+	@FindBy(xpath = "//*[@id=\"kt_app_header_wrapper\"]/div[2]/div[2]/div[2]/div[3]/a")
+	WebElement Signout_BTN;
+	
+	public void Super_Admin_Logout()
+	{
+		Logout_Icon.click();
+		Signout_BTN.click();
+	}
 }

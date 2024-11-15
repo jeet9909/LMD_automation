@@ -101,15 +101,32 @@ public class Center_Body_Roles {
 	@FindBy(xpath = "//*[@class=\"Toastify\"]")
 	WebElement Validation_Message;
 	
-	public void Delete_ROle()
+	public void Delete_ROle() throws InterruptedException
 	{
 		Action_DropDown.click();
 		Delete_ROLE_Option.click();
+		Thread.sleep(1000);
 		YES_Delete_IT_BTN.click();
+		Thread.sleep(1000);
 		OK_BTN.click();
 		System.out.println(Validation_Message.getText());
 	}
 	
+	
+//	========================== TCI Central BOdy Logout ========================
+	
+	@FindBy(xpath = "//*[@id=\"kt_app_header_wrapper\"]/div[2]/div[2]/div[1]/img")
+	WebElement Logout_Icon;
+	
+	@FindBy(xpath = "//*[@id=\"kt_app_header_wrapper\"]/div[2]/div[2]/div[2]/div[4]/a") 
+	WebElement SignOut_BTN;
+	
+	public void TCI_Central_Body_Logout() throws InterruptedException
+	{
+		Thread.sleep(5000);
+		Logout_Icon.click();
+		SignOut_BTN.click();
+	}
 	
 	
 }

@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TC_Super_Admin.TC_Super_Admin_Caste">
+      <class name="TC_TIC_Center_Body.TC_Central_Body_Designation">
         <methods>
           <include name="Close"/>
           <include name="Invoke"/>
           <include name="pageobject"/>
-          <include name="TC_LMD_1000_Caste_Curd"/>
+          <include name="LMD_845_Designation"/>
         </methods>
-      </class> <!-- TC_Super_Admin.TC_Super_Admin_Caste -->
+      </class> <!-- TC_TIC_Center_Body.TC_Central_Body_Designation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

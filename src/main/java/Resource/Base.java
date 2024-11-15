@@ -15,6 +15,7 @@ import AIO.Super_Admin_Caste;
 import Abstract.abstractClass;
 import Oem.Roles;
 import TIC_Center_Body.Center_Body_Roles;
+import TIC_Center_Body.Central_Body_Designation;
 
 public class Base {
 
@@ -25,7 +26,7 @@ public class Base {
 	public SuperAdmin_State PO_SP_State;
 	public Center_Body_Roles PO_Central_Body;
 	public Super_Admin_Caste PO_SP_Caste;
-	
+	public Central_Body_Designation PO_TIC_Deg;
 	
 	@SuppressWarnings("deprecation")
 	@BeforeSuite
@@ -45,6 +46,7 @@ public class Base {
 		PO_SP_State = new SuperAdmin_State(driver);
 		PO_Central_Body = new Center_Body_Roles(driver);
 		PO_SP_Caste = new Super_Admin_Caste(driver);
+		PO_TIC_Deg = new Central_Body_Designation(driver);
 	}
 	
 	@AfterSuite

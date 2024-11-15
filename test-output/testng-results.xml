@@ -1,29 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-14T18:04:32 IST" name="Default suite" finished-at="2024-11-14T18:04:41 IST" duration-ms="9048">
+  <suite started-at="2024-11-15T17:56:51 IST" name="Default suite" finished-at="2024-11-15T17:56:55 IST" duration-ms="4321">
     <groups>
     </groups>
-    <test started-at="2024-11-14T18:04:32 IST" name="Default test" finished-at="2024-11-14T18:04:41 IST" duration-ms="9048">
-      <class name="TC_Super_Admin.TC_Super_Admin_Caste">
-        <test-method is-config="true" signature="Invoke()[pri:0, instance:TC_Super_Admin.TC_Super_Admin_Caste@4686afc2]" started-at="2024-11-14T18:04:30 IST" name="Invoke" finished-at="2024-11-14T18:04:32 IST" duration-ms="1844" status="PASS">
+    <test started-at="2024-11-15T17:56:51 IST" name="Default test" finished-at="2024-11-15T17:56:55 IST" duration-ms="4321">
+      <class name="TC_TIC_Center_Body.TC_Central_Body_Designation">
+        <test-method is-config="true" signature="Invoke()[pri:0, instance:TC_TIC_Center_Body.TC_Central_Body_Designation@4686afc2]" started-at="2024-11-15T17:56:49 IST" name="Invoke" finished-at="2024-11-15T17:56:51 IST" duration-ms="2336" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Invoke -->
-        <test-method is-config="true" signature="pageobject()[pri:0, instance:TC_Super_Admin.TC_Super_Admin_Caste@4686afc2]" started-at="2024-11-14T18:04:32 IST" name="pageobject" finished-at="2024-11-14T18:04:32 IST" duration-ms="46" status="PASS">
+        <test-method is-config="true" signature="pageobject()[pri:0, instance:TC_TIC_Center_Body.TC_Central_Body_Designation@4686afc2]" started-at="2024-11-15T17:56:51 IST" name="pageobject" finished-at="2024-11-15T17:56:51 IST" duration-ms="69" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pageobject -->
-        <test-method signature="TC_LMD_1000_Caste_Curd()[pri:0, instance:TC_Super_Admin.TC_Super_Admin_Caste@4686afc2]" started-at="2024-11-14T18:04:32 IST" name="TC_LMD_1000_Caste_Curd" finished-at="2024-11-14T18:04:41 IST" duration-ms="8960" status="PASS">
+        <test-method signature="LMD_845_Designation()[pri:0, instance:TC_TIC_Center_Body.TC_Central_Body_Designation@4686afc2]" started-at="2024-11-15T17:56:51 IST" name="LMD_845_Designation" finished-at="2024-11-15T17:56:55 IST" duration-ms="4195" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="#" class="btn btn-light btn-active-light-primary btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">...</a> is not clickable at point (1796, 364). Other element would receive the click: <div class="modal fade show d-block" id="kt_modal_add_designation" role="dialog" tabindex="-1" aria-modal="true">...</div>
+  (Session info: chrome=130.0.6723.117)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [40124bc775a427c1ae22ae81c82e290c, clickElement {id=f.36B6E79A1B3A3A5930B5BAD504A87BC8.d.9BEAAE9EFB86D4AA57ABC090DCBDE31D.e.97}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\netsol\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55970}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55970/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (40124bc775a427c1ae22ae81c82e290c)] -> xpath: //*[@id="kt_table_designation"]/tbody/tr[1]/td[5]/a]
+Session ID: 40124bc775a427c1ae22ae81c82e290c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="#" class="btn btn-light btn-active-light-primary btn-sm" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end">...</a> is not clickable at point (1796, 364). Other element would receive the click: <div class="modal fade show d-block" id="kt_modal_add_designation" role="dialog" tabindex="-1" aria-modal="true">...</div>
+  (Session info: chrome=130.0.6723.117)
+Build info: version: '4.26.0', revision: '8ccf0219d7'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [40124bc775a427c1ae22ae81c82e290c, clickElement {id=f.36B6E79A1B3A3A5930B5BAD504A87BC8.d.9BEAAE9EFB86D4AA57ABC090DCBDE31D.e.97}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\netsol\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55970}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55970/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (40124bc775a427c1ae22ae81c82e290c)] -> xpath: //*[@id="kt_table_designation"]/tbody/tr[1]/td[5]/a]
+Session ID: 40124bc775a427c1ae22ae81c82e290c
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy14.click(Unknown Source)
+at TIC_Center_Body.Central_Body_Designation.Delete_Designation(Central_Body_Designation.java:97)
+at TC_TIC_Center_Body.TC_Central_Body_Designation.LMD_845_Designation(TC_Central_Body_Designation.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_LMD_1000_Caste_Curd -->
-        <test-method is-config="true" signature="Close()[pri:0, instance:TC_Super_Admin.TC_Super_Admin_Caste@4686afc2]" started-at="2024-11-14T18:04:41 IST" name="Close" finished-at="2024-11-14T18:04:41 IST" duration-ms="199" status="PASS">
+        </test-method> <!-- LMD_845_Designation -->
+        <test-method is-config="true" signature="Close()[pri:0, instance:TC_TIC_Center_Body.TC_Central_Body_Designation@4686afc2]" started-at="2024-11-15T17:56:55 IST" name="Close" finished-at="2024-11-15T17:56:56 IST" duration-ms="233" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Close -->
-      </class> <!-- TC_Super_Admin.TC_Super_Admin_Caste -->
+      </class> <!-- TC_TIC_Center_Body.TC_Central_Body_Designation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
